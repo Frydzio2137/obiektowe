@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filip Frydrychowski</title>
+    <script language="JavaScript">
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <b>Kod do zadania 32</b>
+    <textarea readonly style="width: 800px;height: 600px;">
+        <!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function monitor(przekatna_ekranu_m, format_obrazu_m, rozdzielczosc_m) {
+            this.przekatna_ekranu = przekatna_ekranu_m;
+            this.format_obrazu = format_obrazu_m;
+            this.rozdzielczosc = rozdzielczosc_m;
+        }
+        monitor.prototype.wypisz = function () {
+            alert(this.przekatna_ekranu + ' ' + this.format_obrazu + ' ' + this.rozdzielczosc);
+        };
+        var ekran1 = new monitor("23", "16:9", "3840x2160"); 
+        var ekran2 = new monitor('27', '16:9', '1920x1080');
+        ekran1.wypisz(); 
+        ekran2.wypisz();
+      
+        document.write("monitor pierwszy" + " " + ekran1.przekatna_ekranu + " " + ekran1.format_obrazu + " " + ekran1.rozdzielczosc);
+        document.write("<br>monitor drugi" + " " + ekran2.przekatna_ekranu + " " + ekran2.format_obrazu + " " + ekran2.rozdzielczosc);
+    </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>
+
+        
+    </textarea>
+</body>
+
+</html>
