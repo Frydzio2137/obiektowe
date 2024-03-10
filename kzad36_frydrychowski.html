@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filip Frydrychowski Zadanie 36 - Kod</title>
+    <script language="JavaScript">
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<b>Kod do zadania 36</b><br>
+<textarea readonly style="width: 800px;height: 400px;">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="pl">
+        <head>
+        <meta charset="UTF-8">
+        <title>Wybór koloru</title>
+</head>
+<body>
+<p style="color: green;font-size:50px">Menu</p>
+<p style="color: red;font-size: 30px">1-Czerwony</p>
+<p style="color: blue;font-size: 30px">2-Niebieski</p>
+<input type="button" value="Sprawdź kolor" onclick="spr_fry()" />
+
+<script>
+    function spr_fry() {
+        var kol_fry = prompt("Podaj kolor (1-czerwony, 2-niebieski) lub nazwę (czerwony, niebieski):", "");
+        kol_fry = kol_fry.toLowerCase();
+
+        if (kol_fry == "1" || kol_fry == "czerwony") {
+            document.write('<h1 style="color: red; font-size: 7;">Wczytałeś kolor czerwony</h1>');
+        }
+        else if (kol_fry == "2" || kol_fry == "niebieski") {
+            document.write('<h1 style="color: blue; font-size: 1;">Wczytałeś kolor niebieski</h1>');
+        }
+        else {
+            document.write('<p style="color: green;">Niepoprawne dane. Spróbuj ponownie.</p>');
+        }
+    }
+</script>
+<a href="index.html">Powrót</a>
+</body>
+</html>
+
+
+
+    </textarea>
+<a href="index.html">Powrót</a>
+</body>
+
+</html>
