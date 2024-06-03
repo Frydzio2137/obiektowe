@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <title>Filip Frydrychowski</title>
     <meta charset="utf-8">
     <style>
-        h1 { text-transform: uppercase; }
+        h1 {
+            text-transform: uppercase;
+        }
     </style>
 </head>
+
 <body>
-<h1>Proste działania</h1>
-<h2>Frydrychowski 3Fg1</h2>
-<label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
-<br><br>
-<label for="b">Podaj drugą liczbę:</label> <input type="number" id="b">
-<br><br>
-<input type="button" value="DODAWANIE" onclick="suma_fry()">
-<input type="button" value="ODEJMOWANIE" onclick="roznica_fry()">
-<input type="button" value="MNOŻENIE" onclick="iloczyn_fry()">
-<input type="button" value="DZIELENIE" onclick="iloraz_fry()">
-<div id="wynik" style="margin-top:20px;"></div>
-<script>
-    function suma_fry() {
-        var a = document.getElementById("a").value;
-        var b = document.getElementById("b").value;
-        if (a == "" || b == "") {
-            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
-        } else {
-            a = parseFloat(a);
-            b = parseFloat(b);
-            var suma = a + b;
-            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma.toFixed(2);
-        }
-    }
-
-    function roznica_fry() {
-        var a = document.getElementById("a").value;
-        var b = document.getElementById("b").value;
-        if (a == "" || b == "") {
-            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
-        } else {
-            a = parseFloat(a);
-            b = parseFloat(b);
-            var roznica = a - b;
-            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica.toFixed(2);
-        }
-    }
-
-    function iloczyn_fry() {
-        var a = document.getElementById("a").value;
-        var b = document.getElementById("b").value;
-        if (a == "" || b == "") {
-            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
-        } else {
-            a = parseFloat(a);
-            b = parseFloat(b);
-            var iloczyn = a * b;
-            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn.toFixed(2);
-        }
-    }
-
-    function iloraz_fry() {
-        var a = document.getElementById("a").value;
-        var b = document.getElementById("b").value;
-        if (a == "" || b == "") {
-            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
-        } else {
-            a = parseFloat(a);
-            b = parseFloat(b);
-            if (b == 0) {
-                document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+    <h1>Proste działania</h1>
+    <h2>Frydrychowski 3Fg1</h2>
+    <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+    <br><br>
+    <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b">
+    <br><br>
+    <input type="button" value="DODAWANIE" onclick="suma_fry()">
+    <input type="button" value="ODEJMOWANIE" onclick="roznica_fry()">
+    <input type="button" value="MNOŻENIE" onclick="iloczyn_fry()">
+    <input type="button" value="DZIELENIE" onclick="iloraz_fry()">
+    <div id="wynik" style="margin-top:20px;"></div>
+    <script>
+        function suma_fry() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
             } else {
-                var iloraz = a / b;
-                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz.toFixed(2);
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var suma = a + b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma.toFixed(2);
             }
         }
-    }
-</script>
-<a href="index.html">Powrót</a>
+
+        function roznica_fry() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var roznica = a - b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica.toFixed(2);
+            }
+        }
+
+        function iloczyn_fry() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var iloczyn = a * b;
+                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn.toFixed(2);
+            }
+        }
+
+        function iloraz_fry() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                if (b == 0) {
+                    document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                } else {
+                    var iloraz = a / b;
+                    document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz.toFixed(2);
+                }
+            }
+        }
+    </script>
+    <a href="index.html">Powrót</a>
 </body>
+
 </html>
